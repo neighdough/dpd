@@ -1,0 +1,9 @@
+stfp, state FIP code
+countfp, county FIP code
+tracece, tract name
+blkgrpce, block group name
+geoid, block group identifer
+namelsad, block group text name
+lu_netden, net density living units (in acres)
+emp_netden, net density employment (in acres)
+pop10_netden, net density 2010 population (in acres)
