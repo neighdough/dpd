@@ -201,9 +201,9 @@ pca = PCA(n_components=1)
 X_new = pca.fit_transform(X)
 y_pos_idx = y_net[y_net >= 0].index
 y_neg_idx = y_net[y_net < 0].index
-plt.figure(figsize=(24,24))
-plt.scatter(X_new[y_pos_idx], y_pred[y_pos_idx], c='blue', s=100, marker='D')
-plt.scatter(X_new[y_neg_idx], y_pred[y_neg_idx], c='red', s=100)
+plt.figure(figsize=(8,8))
+plt.scatter(X_new[y_pos_idx], y_pred[y_pos_idx], c='Green', s=100)
+plt.scatter(X_new[y_neg_idx], y_pred[y_neg_idx], c='Purple', s=100)
 plt.ylabel('Net Construction', fontsize=20)
 
 
@@ -234,9 +234,9 @@ for row in range(rows):
 #            df.plot.scatter(x=x_vars[var_pos], y='numpermit',
 #                    ax=axes[row, col], color='blue')
             df[df.net < 0].plot.scatter(x=x_vars[var_pos], y='net',
-                    ax=axes[row, col], color='red')
+                    ax=axes[row, col], color='Purple')
             df[df.net >= 0].plot.scatter(x=x_vars[var_pos], y='net',
-                    ax=axes[row, col], color='blue')
+                    ax=axes[row, col], color='Green')
             var_pos += 1
 #kde plot net construction
 for row in range(rows):
