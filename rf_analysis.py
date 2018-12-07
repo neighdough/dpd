@@ -233,7 +233,7 @@ for row in range(rows):
         if var_pos < len(x_vars):
 #            df.plot.scatter(x=x_vars[var_pos], y='numpermit',
 #                    ax=axes[row, col], color='blue')
-            df[df.net < 0].plot.scatter(x=x_vars[var_pos], y='net',
+            df[df.net < 0].plot.scatter(x=x_vars[var_pos], y='net', marker='+',
                     ax=axes[row, col], color='red')
             df[df.net >= 0].plot.scatter(x=x_vars[var_pos], y='net',
                     ax=axes[row, col], color='blue')
