@@ -233,8 +233,13 @@ for row in range(rows):
         if var_pos < len(x_vars):
 #            df.plot.scatter(x=x_vars[var_pos], y='numpermit',
 #                    ax=axes[row, col], color='blue')
+<<<<<<< HEAD
             df[df.net < 0].plot.scatter(x=x_vars[var_pos], y='net',
                     ax=axes[row, col], color='Purple')
+=======
+            df[df.net < 0].plot.scatter(x=x_vars[var_pos], y='net', marker='+',
+                    ax=axes[row, col], color='red')
+>>>>>>> 3965706c2d42e66d54e2b4f92a5eab99e650ba6b
             df[df.net >= 0].plot.scatter(x=x_vars[var_pos], y='net',
                     ax=axes[row, col], color='Green')
             var_pos += 1
